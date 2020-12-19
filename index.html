@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSWATCH CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <title>Products</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="/" class="navbar-brand">
+    BuyStock
+    </a>    
+  </nav>
+  <div class="container">
+    <div id="app" class="row pt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Add a Product</h4>
+          </div>
+          <form id="productForm" class="card-body">
+            <div class="form-group">
+              <input type="text" id="nameProduct" placeholder="Product Name" class="form-control"/>
+            </div>
+            <div class="form-group">
+             <input type="number" step="0.01" id="price" placeholder="Product Price" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <input type="number" id="year" value="2018" min="1996" max="2025" placeholder="Caducity Year" class="form-control"/>
+            </div>
+            <input type="submit" value="Save" class="btn btn-outline-success btn-block"/>
+          </form>
+        </div>
+      </div>
+      <div id="product-list" class="col-md-8">
+
+       </div>              
+    </div> 
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
